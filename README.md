@@ -1,8 +1,6 @@
 # Deploying a Flask API
 
-This is the project starter repo for the course Server Deployment, Containerization, and Testing.
-
-In this project you will containerize and deploy a Flask API to a Kubernetes cluster using Docker, AWS EKS, CodePipeline, and CodeBuild.
+This is the project is a simple Flask API, containerized and deployed to AWS using Kubernates, EKS, CodePipeline, and CodeBuild.
 
 The Flask app that will be used for this project consists of a simple API with three endpoints:
 
@@ -12,7 +10,9 @@ The Flask app that will be used for this project consists of a simple API with t
 
 The app relies on a secret set as the environment variable `JWT_SECRET` to produce a JWT. The built-in Flask server is adequate for local development, but not production, so you will be using the production-ready [Gunicorn](https://gunicorn.org/) server when deploying the app.
 
+## AWS Info
 
+* Production API URL: <a href="http://a4ed62f5a0c574784b748261a379de05-399082560.us-east-2.elb.amazonaws.com">http://a4ed62f5a0c574784b748261a379de05-399082560.us-east-2.elb.amazonaws.com</a>
 
 ## Prerequisites
 
@@ -20,7 +20,7 @@ The app relies on a secret set as the environment variable `JWT_SECRET` to produ
 * Git: <a href="https://git-scm.com/downloads" target="_blank">Download and install Git</a> for your system. 
 * Code editor: You can <a href="https://code.visualstudio.com/download" target="_blank">download and install VS code</a> here.
 * AWS Account
-* Python version between 3.7 and 3.9. Check the current version using:
+* Python version 3.9. Check the current version using:
 ```bash
 #  Mac/Linux/Windows 
 python --version
